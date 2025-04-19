@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/output.css">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="/images/l.png">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="primary-header | flex items-center md:justify-between px-6 md:px-8">
+    <!-- <a id='lcIcon' href="index.html" class="font-bold text-2xl">lc</a> -->
+    <a id='lIcon' href="index.html"><img class="icon-l" src="images/l.png" alt="l" width="30px"></a>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+      <img class="icon-hamburger" src="images/menu.svg" alt="" aria-hidden="true">
+      <img class="icon-close" src="images/cross.svg" alt="" aria-hidden="true">
+      <span class="visually-hidden">Menu</span>
+    </button>
+    <nav class="primary-navigation" id="primary-navigation">
+      <ul role="list" class="nav-list">
+        <li><a href="index.html" class="nav-item" active>Home</a></li>
+        <!-- <li><a href="work.html" class="nav-item">Work</a></li> -->
+        <!-- <li><a href="blog.html" class="nav-item">Blog</a></li> -->
+        <li><a href="contact.html" class="nav-item">Contact</a></li>
+      </ul>
+      <div class="closeMenuButton-wrapper">
+        <button
+          class="closeMenuButton button small-button | flex items-center gap-2 border border-2 rounded-full px-4 py-2 md:py-2 md:px-8 mt-12 lg:mt-16">
+          <img src="images/cross.svg" alt="">
+          <div class="fs-btn-text-sm">Close Menu</div>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <!-- Main -->
+  <main class="flex flex-col gap-20 lg:gap-24">
+    <!-- Bio -->
+    <section class="mt-10">
+      <div class="container">
+        <h1 class="fs-page-sub-h">Hello,</h1>
+        <div class="flex flex-wrap gap-x-8">
+          <h1 class="fs-page-h">I'm <span class="text-with-image-bg fs-page-h">Lokender</span></h1>
+          <!-- <img src="images/Lokender.svg" class="p-0 lg:pt-2" alt=""> -->
+          <!-- <svg width="400" height="100" xmlns="http://www.w3.org/2000/svg">
+            <text x="20" y="60" class="text-with-image-bg">HELLO</text>
+          </svg> -->
+          
+        </div>
+        <div class="bio-w mt-8 md:mt-0 fs-text-sm">
+          <h2 class="fw-semi-bold">
+            A Full-stack engineer (front-end focus) with 5 years of experience, based out of Jaipur, India.
+          </h2>
+          </br>
+          <h2>
+            My goal is to follow my passion in front-end  while teaming up with people with similar interests to build scaleble, performant, secure and user-friendly software that put a significant impact towards future in Technology and Design.
+          </h2>
+          </br>
+          <button onclick="window.open('https://drive.google.com/file/d/1IocuEpXCEsV93H4OA5lTpOxvZWkLxtoJ/view?usp=sharing','_blank','resizable=yes')"
+            class="button small-button | cursor-pointer flex items-center gap-2 border border-2 rounded-full px-4 py-2 md:py-2 md:px-8 mt-8 lg:mt-10">
+            <img src="images/download.svg" class='icon-black' alt="">
+            <img src="images/downloadBlue.svg" class='icon-blue' alt="">
+            <span class="fs-btn-text-sm">Download Resume</span>
+        </button>
+        </div>
+      </div>
+    </section>
+    <!-- Work -->
+    <section>
+      <div class="container">
+        <h1 class="flex items-center fs-h1 fw-bold py-4 md:py-10 lg:py-12">Work</h1>
+      </div>
+      <div class="work-container">
+        <!-- blue green pink orange blue-->
+        <div class="work-item-container" data-bg-color="blue">
+          <a target="_blank" href="https://github.com/LokenderChouhan/LokenderChouhan.github.io"
+            class="work-item container | fs-h1 fw-semi-bold py-4 md:py-10 lg:py-12">
+            <div>Smooth Scrolling Website
+              <img src="images/rightArrowWhite.svg" class="work-right-white-arrow" alt="">
+              <img src="images/rightArrow.svg" class="work-right-black-arrow" alt="">
+            </div>
+          </a>
+        </div>
+        <div class="work-item-container" data-bg-color="green">
+          <a target="_blank" href="https://github.com/LokenderChouhan/DigitalTest"
+            class="work-item container | fs-h1 fw-semi-bold py-4 md:py-10 lg:py-12">
+            <div>Digital Class
+              <img src="images/rightArrowWhite.svg" class="work-right-white-arrow" alt="">
+              <img src="images/rightArrow.svg" color='white' class="work-right-black-arrow" alt="">
+            </div>
+          </a>
+        </div>
+        <div class="work-item-container" data-bg-color="pink">
+          <a target="_blank" href="https://github.com/LokenderChouhan/React-Native-Financial-Calculator-App"
+            class="work-item container | fs-h1 fw-semi-bold py-4 md:py-10 lg:py-12">
+            <div>Financial calculator
+              <img src="images/rightArrowWhite.svg" class="work-right-white-arrow" alt="">
+              <img src="images/rightArrow.svg" class="work-right-black-arrow" alt="">
+            </div>
+          </a>
+        </div>
+        <!-- <div class="work-item-container" data-bg-color="orange">
+          <a target="_blank" href="pdf/Understanding colors.pdf"
+            class="work-item container | fs-h1 fw-semi-bold py-4 md:py-10 lg:py-12">
+            <div>Understanding Colors
+              <img src="images/rightArrowWhite.svg" class="work-right-white-arrow" alt="">
+              <img src="images/rightArrow.svg" class="work-right-black-arrow" alt="">
+            </div>
+          </a>
+        </div>
+        <div class="work-item-container" data-bg-color="blue">
+          <a target="_blank" href="pdf/Notification panel.pdf"
+            class="work-item container | fs-h1 fw-semi-bold py-4 md:py-10 lg:py-12">
+            <div>Notification Panel
+              <img src="images/rightArrowWhite.svg" class="work-right-white-arrow" alt="">
+              <img src="images/rightArrow.svg" class="work-right-black-arrow" alt="">
+            </div>
+          </a>
+        </div>
+        <div class="work-item-container" data-bg-color="green">
+          <a target="_blank" href="pdf/Canvas Case study.pdf"
+            class="work-item container | fs-h1 fw-semi-bold py-4 md:py-10 lg:py-12">
+            <div>
+              Complex Canvas Visual & Functional Design
+              <img src="images/rightArrowWhite.svg" class="work-right-white-arrow" alt="">
+              <img src="images/rightArrow.svg" class="work-right-black-arrow" alt="">
+            </div>
+          </a>
+        </div> -->
+      </div>
+    </section>
+    <!-- Experience -->
+    <section>
+      <div>
+        <h1 class="container | flex items-center fs-h1 fw-bold py-4 md:py-10 lg:py-12">Experience</h1>
+        <div class="experience-item-container">
+          <div class="experience-item container">
+            <div class="fs-text-md fw-regular">Sept 2024 - Present</div>
+            <div>
+              <h3 class="fs-h3 fw-bold">Frontend Engineer</h3>
+              <div class="fs-text-md fw-semi-bold">
+                <a class="hover:text-[#FBAB7E]" target="_blank" href="https://www.ambientsecurity.ai/">Ambient Security</a>
+              </div>
+              <div class="fs-text-md fw-regular">San Jose, CA, US</div>
+            </div>
+            <ul class="fs-text-sm list-disc" role='list'>
+              <li>Engineered complex graph-based UIs using D3.js</li>
+              <li>Scaled to handle 10,000 concurrent node visualisations without latency</li>
+              <li>Implemented Privileged access management (PAM) managing identities across environments.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience-item-container">
+          <div class="experience-item container">
+            <div class="fs-text-md fw-regular">May 2021 - June 2022</div>
+            <div>
+              <h3 class="fs-h3 fw-bold">Software Engineer</h3>
+              <div class="fs-text-md fw-semi-bold">
+                <a class="hover:text-[#8EC5FC]" target="_blank" href="https://truckx.com/">TruckX</a>
+              </div>
+              <div class="fs-text-md fw-regular">Austin, Texas, US</div>
+            </div>
+            <ul class="fs-text-sm list-disc">
+              <li>Developed and scaled a robust fleet management system supporting over 90,000 active drivers.</li>
+              <li>Implemented the entire payment model and subscription with Stripe for Product Sales Platform (https://sales.truckx.com/store)</li>
+              <li>Worked on internal solution for Support representative to manage and resolve users issues with track of actions.</li>
+              <li>Implemented core main logic of driver report visualisation and reports availability.</li>
+              <li></li>
+              <li>Led a major migration effort that reduced project size by 50%. </li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience-item-container">
+          <div class="experience-item container">
+            <div class="fs-text-md fw-semi-bold">
+              July 2020 - May 2021
+            </div>
+            <div>
+              <h3 class="fs-h3 fw-bold">Fullstack Engineer</h3>
+              
+                <a class="hover:text-[#FF6A88]" target="_blank" href="https://www.blue-bricks.com/">
+                  <div class="fs-text-md fw-semi-bold">Bluebricks</div>
+                </a>
+              <div class="fs-text-md fw-regular">Melbourne, Australia</div>
+            </div>
+            <ul class="fs-text-sm list-disc">
+              <li>Executive responsive site design, interactions design, and UI prototypes.</li>
+              <li>Applied Human Interactions Guidlines and contributed to app development projects.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Education -->
+    <section>
+      <div class="container">
+        <h1 class="flex items-center fs-h1 fw-bold py-4 md:py-10 lg:py-12"> Education </h1>
+        <div class="education-item fs-text-md">
+          <div class="fw-regular">2016 - 2020</div>
+          <h3 class="fw-bold">Bachelor of Engineering (B.E.)</h3>
+          <div class="fw-semi-bold">
+            <a target="_blank" class="hover:text-sky-500" href="https://www.aitpune.com/">Army Institue of Technology</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Quote -->
+    <section class="border-b-2 border-black pb-12">
+      <div class="container">
+        <span class="fs-h1 fw-semi-bold">Yesterday’s experiences are </span>
+        <span class="fs-h1 fw-bold">today’s stories!</span>
+      </div>
+    </section>
+    <!-- Blog -->
+    <!-- <section>
+      <div class="container">
+        <h1 class="fs-h1 fw-bold"> Blog </h1>
+      </div>
+      <div class="overflow-hidden">
+        <div class="carouselCardsContainer md:flex w-full mt-12 relative" data-move="0">
+          <div data-page="blog1.html"
+            class="p-6 md:p-10 md:min-h-96 border-y-2 border-x-0 md:border-r-2 border-black flex flex-col gap-4 justify-end cursor-pointer hover:bg-gray-100 md:hover:text-white"
+            data-bg-color="blue" left>
+            <p class="fs-text-md pointer-events-none">3 Min Read</p>
+            <h2 class="fs-h3 fw-bold w-full md:w-1/2 pointer-events-none">Design and Accessibility: A Symbiotic
+              Relationship</h2>
+          </div>
+          <div data-page="blog2.html"
+            class="p-6 md:p-10 md:min-h-96 border-b-2 md:border-y-2 md:border-r-2 border-black flex flex-col gap-4 justify-end cursor-pointer hover:bg-gray-100 md:hover:text-white"
+            data-bg-color="green">
+            <p class="fs-text-md pointer-events-none">5 Min Read</p>
+            <h2 class="fs-h3 fw-bold w-full md:w-1/2 pointer-events-none">The Importance of Design Systems in
+              Organizational Design</h2>
+          </div>
+          <div data-page="blog3.html"
+            class="p-6 md:p-10 md:min-h-96 border-b-2 md:border-y-2 md:border-x-0 border-black flex flex-col gap-4 justify-end cursor-pointer hover:bg-gray-100 md:hover:text-white"
+            data-bg-color="pink">
+            <p class="fs-text-md pointer-events-none">5 Min Read</p>
+            <h2 class="fs-h3 fw-bold w-full md:w-1/2 pointer-events-none">Understanding UX Design: Crafting Experiences
+              that Matter</h2>
+          </div>
+          <div class="p-4 md:p-10 min-h-40 md:min-h-96 border-b-2 md:border-y-2 md:border-r-2 border-black flex flex-col gap-4 justify-end cursor-pointer hover:bg-gray-100">
+            <p>3 Min Read 4</p>
+            <h2 class="fs-text-md fw-bold w-full md:w-1/2">What UI UX Design - for beginners</h2>
+          </div>
+          <div class="p-4 md:p-10 min-h-40 md:min-h-96 border-b-2 md:border-y-2 md:border-r-2 border-black flex flex-col gap-4 justify-end cursor-pointer hover:bg-gray-100">
+            <p>3 Min Read 5</p>
+            <h2 class="fs-text-md fw-bold w-full md:w-1/2">What UI UX Design - for beginners</h2>
+          </div>
+        </div>
+        <div class="carouselNavContainer flex justify-center gap-3 my-4">
+          <button class="carouselNav" data-move="0" active></button>
+          <button class="carouselNav" data-move="-1"></button>
+          <button class="carouselNav" data-move="-2"></button>
+        </div>
+      </div>
+    </section> -->
+  </main>
+  <!-- Footer -->
+  <footer>
+    <div class="container mt-12">
+      <div class="footer">
+        <div>
+          <span class="fs-h1 fw-semi-bold">Want to talk more about Design</span>
+          <span class="fs-h1 fw-bold">&nbsp;& Technology ?</span>
+        </div>
+        <a href="contact.html"
+          class="button | w-max flex items-center gap-2 border border-2 rounded-full px-4 py-2 mt-8 md:mt-0 md:py-2 md:px-10 md:mt-16">
+          <div class="fs-btn-text-md">Contact me</div>
+          <img src="images/rightArrow.svg" class='icon-black' alt="">
+          <img src="images/rightArrowBlue.svg" class='icon-blue' alt="">
+        </a>
+        <div
+          class="flex flex-col flex-wrap md:flex-row md:items-center md:justify-between fs-text-md my-14 md:mt-28 mb:mb-24 gap-6 md:gap-0">
+          <div class="flex flex-col justify-start gap-y-6 md:flex-row md:gap-16">
+            <a target="_blank" href="https://www.linkedin.com/in/lokender-chouhan-589a4b14b/">LinkedIn</a>
+            <a target="_blank" href="https://www.instagram.com/the_nutty_developer">Instagram</a>
+          </div>
+          <div class="mt-4">
+            <a target="_blank" href="mailto:lokendrajdpr@gmail.com">lokendrajdpr@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
